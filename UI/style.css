@@ -1,7 +1,11 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .topbar{
     background-color: rgb(121, 118, 118);
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
 .topbar a{
     float: right;
@@ -11,9 +15,10 @@
     color: black;
 }
 .navbar{
-    background-color: #2b9fec;
+    background-color: rgb(31, 191,58);
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
 .navbar a{
     float: right;
@@ -21,10 +26,11 @@
     text-align: center;
     font-size: 20px;
     color: black;
-    background-color: #2b9fec;
+    background-color: rgb(31, 191,58);
 }
 .navbar #logo{
     float: left;
+    font-size: 80%;
 }
 .navbar a:hover{
     background-color: rgb(184, 183, 183);
@@ -34,34 +40,64 @@
     background-color: rgb(184, 183, 183);
     color: black;
 }
+.sidebar{
+    width: 15%;
+    background-color: rgb(216, 210, 210);
+    padding-top: 20px;
+    height: 500px;
+    float: left;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #1c7ab9;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+.sidebar a:hover{
+    background-color: rgb(158, 157, 157);
+    color:#054b7a;
+}
+
+.middle{
+    float: left;
+    width: 33%;
+    height: 500px;
+    padding: 20px;
+    background-color:white; 
+}
 form .login{
-    border: 3px solid #2b9fec;
+    border: 3px solid rgb(31, 191,58);
     text-align: left;
     float: right;
 }
 input[type=email], input[type=password], input[type=text]{
-    width: 250px;
-    padding: 8px;
-    margin-top: 5px;
-    margin-left: 16px;
+    width: 100%;
+    margin: 5px 0 22px 0;
     color: white;
     border:1px solid #ccc;
-    border-bottom: #ccc solid 2px;
     border-radius: 4px;
     font-size: lem;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+input[type=email]:focus,input[type=text]:focus, input[type=password]:focus {
+        background-color: hsl(0, 0%, 85%);
+        outline: none;   
     
 }
 .login{
     background: white;
-    width:300px;
+    width:25%;
     border-radius:6px;
     margin-left: 160px;
-    padding: 0px 0px 70px 0px;
-    border: #2b9fec 4px solid;
-    /*z-index: 1;
+    padding: 10px;
+    border: rgb(31, 191,58) 4px solid;
+    z-index: 1;
     top:0;
     right: 0;
-    position: relative;*/
+    position: auto;
     
 }
 .btn1{
@@ -69,8 +105,8 @@ input[type=email], input[type=password], input[type=text]{
     color: white;
     border-radius: 4px;
     border: rgb(62, 214, 62) solid 1px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     background: #2ec96f;
     float: left;
     margin-left: 16px;
@@ -85,8 +121,8 @@ input[type=email], input[type=password], input[type=text]{
     color: white;
     border-radius: 4px;
     border: rgb(73, 143, 235) solid 1px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     background: #38a2e9;
     float: right;
     margin-right: 10px;
@@ -96,68 +132,60 @@ input[type=email], input[type=password], input[type=text]{
     font-weight: 800;
     text-align: center;
 }
-body{
-    background: #fdfdfd;
-    width: 100%;
-    margin: 20px 0px 20px 0px;
-    margin: 0 auto 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 label{
     display: inline-block;
-    margin: 16px;
+    margin: 14px;
 }
-.sidebar{
-    width: 150px;
-    background-color: rgb(216, 210, 210);
-    padding-top: 20px;
-    overflow-x: hidden;
-    top:0 auto;
-    left: 0;
-    position: fixed;
-    z-index: 1;
-    height: 100%;
-}
-.sidebar a{
-    text-decoration: none;
-    color: #1c7ab9;
-    display:block;
-    padding: 0px 8px 6px 16px;
-    font-size: 20px;
-}
-.sidebar a:hover{
-    background-color: rgb(158, 157, 157);
-    color:#054b7a;
-}
+
 .signup{
     background: white;
-    width:350px;
+    width:100%;
     border-radius:6px;
-    margin-left: 160px;
-    padding: 0px 0px 50px 0px;
-    border: #2b9fec 4px solid;
+    padding: 30px;
+    border: rgb(31, 191,58) 1px solid;
     align-items: center;
+    display: block;
+    overflow: auto;
 }
 form .signup{
-    border: 3px solid #2b9fec;
+    border: 3px solid rgb(31, 191,58);
     text-align: left;
     margin: 0 auto;
-    width:300px;
+    width:50%;
     
 }
 .btn3{
-    width: 270px;
+    box-sizing: border-box;
+    width: 100%;
     color: white;
     border-radius: 4px;
     border: rgb(62, 214, 62) solid 1px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    background: #2ec96f;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: rgb(42,191,94);
     float: left;
-    margin-left: 16px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 800;
     text-align: center;
+}
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+    background-color: rgb(31, 191,58);
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    height: 10%;
+    width: 100%;
+    clear: both;
+
+}
+.footer a{
+    text-align: center;
+    padding: 10px;
+    background-color:rgb(31, 191,58); 
 }
