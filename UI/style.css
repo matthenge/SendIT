@@ -1,0 +1,163 @@
+.topbar{
+    background-color: rgb(121, 118, 118);
+    overflow: hidden;
+    position: relative;
+}
+.topbar a{
+    float: right;
+    padding: 4px 10px;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+}
+.navbar{
+    background-color: #2b9fec;
+    overflow: hidden;
+    position: relative;
+}
+.navbar a{
+    float: right;
+    padding: 12px 14px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    background-color: #2b9fec;
+}
+.navbar #logo{
+    float: left;
+}
+.navbar a:hover{
+    background-color: rgb(184, 183, 183);
+    color: black;
+}
+.navbar a:active{
+    background-color: rgb(184, 183, 183);
+    color: black;
+}
+form .login{
+    border: 3px solid #2b9fec;
+    text-align: left;
+    float: right;
+}
+input[type=email], input[type=password], input[type=text]{
+    width: 250px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: 16px;
+    color: white;
+    border:1px solid #ccc;
+    border-bottom: #ccc solid 2px;
+    border-radius: 4px;
+    font-size: lem;
+    
+}
+.login{
+    background: white;
+    width:300px;
+    border-radius:6px;
+    margin-left: 160px;
+    padding: 0px 0px 70px 0px;
+    border: #2b9fec 4px solid;
+    /*z-index: 1;
+    top:0;
+    right: 0;
+    position: relative;*/
+    
+}
+.btn1{
+    width: 125px;
+    color: white;
+    border-radius: 4px;
+    border: rgb(62, 214, 62) solid 1px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background: #2ec96f;
+    float: left;
+    margin-left: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    font-weight: 800;
+    text-align: center;
+}
+.btn2{
+    width: 125px;
+    color: white;
+    border-radius: 4px;
+    border: rgb(73, 143, 235) solid 1px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background: #38a2e9;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    font-weight: 800;
+    text-align: center;
+}
+body{
+    background: #fdfdfd;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    margin: 0 auto 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    display: inline-block;
+    margin: 16px;
+}
+.sidebar{
+    width: 150px;
+    background-color: rgb(216, 210, 210);
+    padding-top: 20px;
+    overflow-x: hidden;
+    top:0 auto;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #1c7ab9;
+    display:block;
+    padding: 0px 8px 6px 16px;
+    font-size: 20px;
+}
+.sidebar a:hover{
+    background-color: rgb(158, 157, 157);
+    color:#054b7a;
+}
+.signup{
+    background: white;
+    width:350px;
+    border-radius:6px;
+    margin-left: 160px;
+    padding: 0px 0px 50px 0px;
+    border: #2b9fec 4px solid;
+    align-items: center;
+}
+form .signup{
+    border: 3px solid #2b9fec;
+    text-align: left;
+    margin: 0 auto;
+    width:300px;
+    
+}
+.btn3{
+    width: 270px;
+    color: white;
+    border-radius: 4px;
+    border: rgb(62, 214, 62) solid 1px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background: #2ec96f;
+    float: left;
+    margin-left: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    font-weight: 800;
+    text-align: center;
+}
