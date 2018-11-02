@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>SendIT</title>
+    </head>
+    <body>
+        <div class="topbar">
+            <a href="#">Sign up</a>
+            <a>0703251293</a>
+        </div>
+        <div class="navbar">
+            <a href="#">Contact Us</a>
+            <a href="#">Place order</a>
+            <a href="#">Home</a>
+            <div id="logo">
+                <a><b>SendIT</b></a>
+            </div>
+        </div>
+
+        <div class="sidebar">
+                <a href="#services">Home</a>
+                <a href="#neworder">Place Order</a>
+                <a href="#adminlogin">Pending Orders</a>
+                <a href="#adminlogin">Cancelled Orders</a>
+                <a href="#adminlogin">My Orders</a>
+        </div>
+
+        <form method="POST" action="index.html">
+            <div class = "signup">
+                <h2 align="center">New Order</h2>
+                <label for="pickup"><b>Pickup Location</b></label>
+                <input type="text" placeholder="Pickup Location" name = "pickup" required/>
+                <label for="destination"><b>Destination</b></label>
+                <input type="text" placeholder="Destination" name="destination" required/>
+                <label for="pickupdate"><b>Pickup Date</b></label>
+                <input type="date" placeholder="mm/dd/yy" name="pickupdate" required/>
+                <label for="totalprice"><b>Total</b></label>
+                <input type="text" placeholder="Total" name="totalprice" disabled/>
+                <label for="billing"><b>Credit Card Number:</b></label>
+                <input type="text" placeholder="Credit Card Number" name = "billing" required/>
+                <p>By placing an order you agree to our Terms and Conditions</p>
+                <a href="#"><div class="btn3">Place Order</div></a>
+            </div>   
+        </form>
+
+        <div class="footer">
+                <footer>
+                    <a>&copy; 2018 SendIT Inc.</a>
+                    <a>Terms & Conditions apply</a>
+                    <a>All Rights Reserved</a>
+                </footer>
+        </div>
+        
+    </body>
+</html>
