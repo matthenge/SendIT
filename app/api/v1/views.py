@@ -19,3 +19,10 @@ class OneOrder(Resource):
         return {
             "message": "Order placed Successfully"
         }, 201
+
+class GetOneOrder(Resource):
+    """Specific order endpoints"""
+    def get(self, order_id):
+        """GET specific order"""
+        one_order = parcel.get_specific_order(order_id)
+        return one_order
