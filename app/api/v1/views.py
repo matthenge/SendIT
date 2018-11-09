@@ -26,3 +26,10 @@ class GetOneOrder(Resource):
         """GET specific order"""
         one_order = parcel.get_specific_order(order_id)
         return one_order
+
+class AllOrders(Resource):
+    """Class for all order views"""
+    def get(self):
+        """Return all orders"""
+        all_orders = parcel.get_all_orders()
+        return all_orders
