@@ -26,6 +26,11 @@ class GetOneOrder(Resource):
         """GET specific order"""
         one_order = parcel.get_specific_order(order_id)
         return one_order
+    
+    def put(self, order_id):
+        """Cancel order"""
+        cncl_order = parcel.cancel_order(order_id)
+        return cncl_order
 
 class AllOrders(Resource):
     """Class for all order views"""
