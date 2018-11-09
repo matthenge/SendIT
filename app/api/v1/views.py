@@ -38,3 +38,10 @@ class AllOrders(Resource):
         """Return all orders"""
         all_orders = parcel.get_all_orders()
         return all_orders
+
+class UserParcels(Resource):
+    """Class for single user operations"""
+    def get(self, user_id):
+        """Get all orders by a specific user"""
+        all_user_orders = parcel.get_orders_by_specific_user(user_id)
+        return all_user_orders
