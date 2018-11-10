@@ -14,8 +14,9 @@ class OneOrder(Resource):
         pickup_location = data['pickup_location']
         destination = data['destination']
         price = data['price']
+        user_id = data['user_id']
 
-        parcel.create_orders(pickup_location, destination, price)
+        parcel.create_orders(pickup_location, destination, price, user_id)
         return {
             "message": "Order placed Successfully"
         }, 201
@@ -25,23 +26,32 @@ class GetOneOrder(Resource):
     def get(self, order_id):
         """GET specific order"""
         one_order = parcel.get_specific_order(order_id)
-        return one_order
+        return {
+            "message": "Order retrieved", "Order": one_order
+        }, 200
     
     def put(self, order_id):
         """Cancel order"""
-        cncl_order = parcel.cancel_order(order_id)
-        return cncl_order
+        cncl = parcel.cancel_order(order_id)
+        return {
+            "message": "Order Cancelled", "Order": cncl
+        }, 201
 
 class AllOrders(Resource):
     """Class for all order views"""
     def get(self):
         """Return all orders"""
         all_orders = parcel.get_all_orders()
-        return all_orders
+        return {
+            "message": "Success", "Orders": all_orders
+        }, 200
 
 class UserParcels(Resource):
     """Class for single user operations"""
     def get(self, user_id):
         """Get all orders by a specific user"""
         all_user_orders = parcel.get_orders_by_specific_user(user_id)
-        return all_user_orders
+        return {
+            "message": "user orders", "Orders": all_user_orders
+        }, 200
+        

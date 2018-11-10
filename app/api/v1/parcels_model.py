@@ -1,5 +1,30 @@
 from .models import UserModel
-orders = []
+orders = [{
+    "order_id":"100",
+    "pickup_location":"nakuru",
+    "destination":"nairobi",
+    "price":"1400",
+    "user_id":"2"
+}, {
+    "order_id":"104",
+    "pickup_location":"isiolo",
+    "destination":"narok",
+    "price":"1400",
+    "user_id":"5"
+}, {
+    "order_id":"102",
+    "pickup_location":"kisumu",
+    "destination":"mombasa",
+    "price":"1400",
+    "user_id":"2"
+}, {
+    "order_id":"103",
+    "pickup_location":"sultan hamud",
+    "destination":"diani",
+    "price":"1400",
+    "user_id":"2"
+}
+]
 """Parcels model"""
 
 class Parcels:
@@ -9,13 +34,14 @@ class Parcels:
         self.db = orders
         self.order_status = 'pending'
 
-    def create_orders(self, pickup_location, destination, price):
+    def create_orders(self, pickup_location, destination, price, user_id):
         """Create orders"""
         payload = {
-            'order_id' : str(len(orders) + 1),
+            'order_id' : len(orders) + 1,
             'pickup_location': pickup_location, 
             'destination' : destination,
-            'price' : price,    
+            'price' : price, 
+            'user_id' : user_id   
         }
         prcl = self.db.append(payload)
         return prcl
