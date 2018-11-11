@@ -1,3 +1,4 @@
+"""Parcels model"""
 from .models import UserModel
 orders = [{
     "order_id":"100",
@@ -23,9 +24,7 @@ orders = [{
     "destination":"diani",
     "price":"1400",
     "user_id":"2"
-}
-]
-"""Parcels model"""
+}]
 
 class Parcels:
     """The Parcels class"""

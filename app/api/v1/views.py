@@ -1,10 +1,11 @@
+"""Version 1 views"""
 from flask import jsonify, make_response, request
 from flask_restful import Resource
 from.parcels_model import Parcels
+from.models import UserModel
 
 parcel = Parcels()
-
-"""Version 1 views"""
+users = UserModel()
 
 class OneOrder(Resource):
     """Class for single order endpoints"""
@@ -55,3 +56,27 @@ class UserParcels(Resource):
             "message": "user orders", "Orders": all_user_orders
         }, 200
         
+class OneUser(Resource):
+    """Class for single user operations"""
+    def post(self):
+        """Create user"""
+        data = request.get_json()
+        firstname = data['firstname']
+        lastname = data['lastname']
+        username = data['username']
+        email = data['email']
+        password = data['password']
+
+        users.add_users(firstname, lastname, username, email, password)
+        return{
+            "message": "successful registration"
+        }, 201
+
+class GetUser(Resource):
+    """Get one user"""
+    def get(self, user_id):
+        """Get a single user"""
+        one_user = users.get_one_user(user_id)
+        return {
+            "message": "user retrieved", "user": one_user
+        }, 200
