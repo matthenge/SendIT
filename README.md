@@ -8,7 +8,7 @@ Visit the hosted UI template [here](https://matthenge.github.io/SendIT/UI/)
  
 	
         
-## Build with
+## Built with
 
     .HTML
     .CSS
