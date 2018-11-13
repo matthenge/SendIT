@@ -5,6 +5,7 @@ SendIT is a courier services application that allows users to register and place
 
 ## Getting started
 Visit the hosted UI template [here](https://matthenge.github.io/SendIT/UI/)
+
 Clone the repository [here](https://github.com/matthenge/SendIT)
  
 	
