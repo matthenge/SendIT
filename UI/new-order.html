@@ -2,22 +2,22 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SendIT</title>
     </head>
     <body>
         <div class="topbar">
-            <a href="sign-up.html">Sign up</a>
             <a>0703251293</a>
+            <div class="logo">
+                    <a><b>SendIT</b></a>
+            </div>
         </div>
         <div class="navbar">
             <a href="#">Contact Us</a>
             <a href="new-order.html">Place order</a>
             <a href="dashboard.html">Home</a>
-            <div id="logo">
-                <a><b>SendIT</b></a>
-            </div>
         </div>
-
         <div class="sidebar">
                 <a href="dashboard.html">Home</a>
                 <a href="new-order.html">Place Order</a>
@@ -25,24 +25,18 @@
                 <a href="current-orders.html">Cancelled Orders</a>
                 <a href="my-orders.html">My Orders</a>
         </div>
-
-        <form method="POST" action="index.html">
-            <div class = "signup">
-                <h2 align="center">New Order</h2>
-                <label for="pickup"><b>Pickup Location</b></label>
-                <input type="text" placeholder="Pickup Location" name = "pickup" required/>
-                <label for="destination"><b>Destination</b></label>
-                <input type="text" placeholder="Destination" name="destination" required/>
-                <label for="pickupdate"><b>Pickup Date</b></label>
-                <input type="date" placeholder="mm/dd/yy" name="pickupdate" required/>
-                <label for="totalprice"><b>Total</b></label>
-                <input type="text" placeholder="Total" name="totalprice" disabled/>
-                <label for="billing"><b>Credit Card Number:</b></label>
-                <input type="text" placeholder="Credit Card Number" name = "billing" required/>
-                <p>By placing an order you agree to our Terms and Conditions</p>
-                <a href="current-orders.html"><div class="btn3">Place Order</div></a>
-            </div>   
-        </form>
+        <div class="placeorder">
+                <form method="POST" action="index.html">
+                            <h2 align="center">Delivery Order</h2>
+                            <label for="pickup_location"><b>Pickup Location</b></label>
+                            <input type="text" placeholder="Pickup Location" class = "orders" name = "pickup_location" required/>
+                            <label for="destination"><b>Destination</b></label>
+                            <input type="text" placeholder="Destination" class = "orders" name = "destination" required/>
+                            <label for="receipient"><b>Receipient</b></label>
+                            <input type="text" placeholder="Receipient" class = "orders" name = "receipient" required/>
+                            <a href="#"><div class="btn4">Proceed to Checkout</div></a>   
+                </form>
+        </div>
 
         <div class="footer">
                 <footer>

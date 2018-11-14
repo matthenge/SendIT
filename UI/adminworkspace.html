@@ -8,15 +8,15 @@
         <div class="topbar">
             <a href="admin.html"><b>Log out</b></a>
             <a>Hotline 0703251293</a>
-          <div id="dash">
-            <a>SendIT</a>
-          </div>
+            <div class="logo">
+                <a href="index.html"><b>SendIT</b></a>
+            </div>
         </div>
         <div class="navbar">
             <a href="adminworkspace.html">Username</a>
             <a href="adminworkspace.html">Processed orders</a>
             <a href="adminworkspace.html">Pending Orders</a>
-            <div id="logo">
+            <div id="admindash">
                 <a><b>Dashboard</b></a>
             </div>
         </div>
@@ -46,7 +46,12 @@
                     <td>Nairobi</td>
                     <td>1200</td>
                     <th>2d 4hrs</th>
-                    <td>pending</td>
+                    <td>
+                         <select>        
+                             <option value="pending">On-Transit</option>
+                             <option value="delivered">Delivered</option>
+                          </select>
+                    </td>
                 </tr>
             </table>
         </div>
